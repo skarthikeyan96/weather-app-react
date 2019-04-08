@@ -33,7 +33,7 @@ class App extends Component {
  
   componentDidMount() {
    this.getlocation((position)=>{
-    const url = `http://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
     fetch(url)
       .then(d => d.json())
       .then(Response => {
