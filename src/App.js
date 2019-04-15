@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import Weather from "./Weather";
 import './App.css'
 
-console.log(process.env)
-
 class App extends Component {
   constructor(props) {
     super(props);
